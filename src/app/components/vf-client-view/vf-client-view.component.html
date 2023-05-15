@@ -1,0 +1,93 @@
+<div class="center">
+  <h1>Cliente</h1>
+</div>
+<div class="center">
+  <form [formGroup]="vfClientForm">
+    <br />
+    <mat-form-field class="form-width">
+      <mat-label>Id</mat-label>
+      <input matInput formControlName="id" readonly="true" />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>Nombre</mat-label>
+      <input
+        matInput
+        formControlName="vfName"
+        placeholder="Ingrese nombre..."
+        readonly="true"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>DNI</mat-label>
+      <input
+        matInput
+        formControlName="vfDni"
+        placeholder="Ingrese el dni..."
+        readonly="true"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>Año de nacimiento</mat-label>
+      <input
+        matInput
+        formControlName="vfYearOfBirth"
+        placeholder="Ingrese el año de nacimiento..."
+        readonly="true"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>Dirección</mat-label>
+      <input
+        readonly="true"
+        matInput
+        formControlName="vfAddress"
+        placeholder="Ingrese una dirección..."
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>Teléfono</mat-label>
+      <input
+        readonly="true"
+        matInput
+        formControlName="vfPhone"
+        placeholder="Ingrese un teléfono..."
+      />
+    </mat-form-field>
+
+    <br />
+
+    <mat-form-field class="form-width">
+      <mat-label>Email</mat-label>
+      <input
+        readonly="true"
+        matInput
+        formControlName="vfEmail"
+        placeholder="Ingrese un email..."
+        readonly="true"
+      />
+    </mat-form-field>
+
+    <br />
+
+    <div class="center">
+      <button mat-raised-button color="primary" routerLink="/vfClient">
+        Regresar
+      </button>
+    </div>
+  </form>
+</div>

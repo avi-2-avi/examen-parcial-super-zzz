@@ -1,0 +1,62 @@
+<div class="center">
+  <h1>Lista de Clientes</h1>
+</div>
+
+<div class="table-sample">
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="vfDataSource" matSort>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+        <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="vfName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Nombre</th>
+        <td mat-cell *matCellDef="let row">{{ row.vfName }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="vfYearOfBirth">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+          Año de nacimiento
+        </th>
+        <td mat-cell *matCellDef="let row">{{ row.vfYearOfBirth }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="vfView">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let row">
+          <button
+            color="primary"
+            mat-mini-fab
+            (click)="onView(row.id)"
+            aria-label="Go to view for client"
+          >
+            <mat-icon>visibility</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="vfUpdate">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let row">
+          <button
+            color="primary"
+            mat-mini-fab
+            (click)="onEdit(row.id)"
+            aria-label="Go to edit for client"
+          >
+            <mat-icon>update</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="vfDisplayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: vfDisplayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [pageSizeOptions]="[5, 10]"
+      aria-label="Select page of client"
+    ></mat-paginator>
+  </div>
+</div>

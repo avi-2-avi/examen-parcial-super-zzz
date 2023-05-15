@@ -1,0 +1,58 @@
+{
+  "vfClient": [
+    {
+      "id": 1,
+      "vfName": "Maria Santi UPDATEDDDD",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "mail@mail.com",
+      "vfYearOfBirth": "2023",
+      "vfDni": "12345670"
+    },
+    {
+      "id": 2,
+      "vfName": "Jose",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "email@mail.com",
+      "vfYearOfBirth": "2010",
+      "vfDni": "12345678"
+    },
+    {
+      "id": 3,
+      "vfName": "Pablo",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "email@mail.com",
+      "vfYearOfBirth": 2022,
+      "vfDni": "12345678"
+    },
+    {
+      "id": 4,
+      "vfName": "Camila",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "email@mail.com",
+      "vfYearOfBirth": 2022,
+      "vfDni": "12345678"
+    },
+    {
+      "id": 5,
+      "vfName": "Sebastian",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "email@mail.com",
+      "vfYearOfBirth": 2022,
+      "vfDni": "12345678"
+    },
+    {
+      "id": 6,
+      "vfName": "Michael",
+      "vfAddress": "San Jose 111",
+      "vfPhone": "111222333",
+      "vfEmail": "email@mail.com",
+      "vfYearOfBirth": 2022,
+      "vfDni": "12345678"
+    }
+  ]
+}
